@@ -61,7 +61,10 @@ img {
         background-color: #121212;
         background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 70.73%, #121212 98.51%), url(./img/main/main-hero-mobile.jpg.jpg);
         background-repeat: no-repeat;
+        background-size: 335px 439px;
         background-position: left 50% top 40px;
+        margin: 0 auto;
+      
 
     }
     .hero-title{
@@ -109,6 +112,12 @@ img {
       display: flex;
       gap: 10px; 
    }
-
-    
   }
+  @media (min-device-pixel-ratio: 2) and (min-width: 375px),
+  (min-resolution: 192dpi) and (min-width: 375px),
+  (min-resolution: 2dppx) and (min-width: 3375px) {
+  .hero {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 70.73%, #121212 98.51%),
+      url(./img/main/main-hero-mobile_2x.jpg.jpg);
+  }
+}
