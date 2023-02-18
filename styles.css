@@ -19,7 +19,7 @@ img {
   .link {
     text-decoration: none;
   }
-  .conteiner {
+  .container {
     padding-left: 15px;
     padding-right: 15px;
     min-width: 320px;
@@ -32,18 +32,18 @@ img {
   }
   
   @media screen and (min-width: 375px) {
-    .conteiner {
+    .container {
       max-width: 335px;
     }
   }
   
   @media screen and (min-width: 768px) {
-    .conteiner {
+    .container {
       max-width:684px;
     }
   }
   @media screen and (min-width: 1440px) {
-    .conteiner {
+    .container {
       max-width: 1376px;
     }
   }
