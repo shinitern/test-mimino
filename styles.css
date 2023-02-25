@@ -55,10 +55,6 @@ img {
   @media screen and (min-width:320px) {
     .hero{
         background-color: #121212;
-        /* background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 70.73%, #121212 98.51%), url(./img/main/main-hero-mobile.jpg.jpg);
-        background-repeat: no-repeat;
-        background-size: 335px 439px;
-        background-position: left 50% top 40px; */
         margin: 0 auto;
         padding-bottom: 40px;
     }
@@ -69,9 +65,7 @@ img {
         letter-spacing: -0.02em;
         text-transform: uppercase;
         color: #F7F7F7;
-        /* padding-top: 389px; */
         margin-bottom: 24px;
-        /* position: absolute; */
     }
     .hero-img{
       padding: 40px 20px 362px 20px;
@@ -112,8 +106,6 @@ img {
     align-items: center;
     }
     .hero-wrap{
-      /* position: absolute;
-      top: 429px; */
       display: flex;
       flex-direction: column;
       align-items: center;  
@@ -125,46 +117,24 @@ img {
       margin-bottom: 66px;
    }
    .desc-hero-wrap{
-    /* position: absolute;
-    top: 533px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
    }
-  
-  /* @media (min-device-pixel-ratio: 2) and (min-width: 375px),
-  (min-resolution: 192dpi) and (min-width: 375px),
-  (min-resolution: 2dppx) and (min-width: 375px) {
-  .hero {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 70.73%, #121212 98.51%),
-      url(./img/main/main-hero-mobile_2x.jpg.jpg);
-  }
-} */
 
 
 
 /* --------------------tablet--------------------------- */
 
 @media screen and (min-width: 768px){
-  /* .hero{
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 70.73%, #121212 98.51%), url(./img/main/main-hero-tab.jpg.jpg);
-    background-size: 542px 710px ;
-    background-position: left 50% top 50px;
-  } */
   .hero-title{
     font-size: 150px;
-    /* padding-top: 528PX; */
-    
   }
   .hero-img{
    padding: 50px 70px 186px 70px;
   }
-  /* .hero-img-2{
-    width: 542px;
-    height: 710px;
-  } */
 .hero-position{
   top: 528px;
   left: 32px;
@@ -181,32 +151,17 @@ img {
     flex-direction: row;
   }
 }
-/* @media (min-device-pixel-ratio: 2) and (min-width: 768px),
-  (min-resolution: 192dpi) and (min-width: 768px),
-  (min-resolution: 2dppx) and (min-width: 768px) {
-  .hero {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 70.73%, #121212 98.51%),
-      url(./img/main/main-hero-tab_2x.jpg.jpg);
-  }
-} */
+
 
 
 /* -----------------desctop-------------------- */
 
 @media screen and (min-width:1440px){
-  /* .hero{
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 70.73%, #121212 98.51%), url(./img/main/main-hero-desc.jpg.jpg);
-    background-size: 542px 770px ;
-    background-position: left 100% top 0px ;
-  } */
-  /* .hero-wrap{
-    display: block;
-  } */
+
   .hero{
     padding-bottom: 0px;
   }
   .hero-title{
-    /* padding-top: 274px; */
     margin-bottom: 196px;
   }
   .desc-hero-wrap{
@@ -237,11 +192,3 @@ img {
     margin-bottom: 0;
   }
 }
-/* @media (min-device-pixel-ratio: 2) and (min-width: 1440px),
-  (min-resolution: 192dpi) and (min-width: 1440px),
-  (min-resolution: 2dppx) and (min-width: 1440px) {
-  .hero {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 70.73%, #121212 98.51%),
-      url(./img/main/main-hero-desc_2x.jpg.jpg);
-  }
-} */
