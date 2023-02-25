@@ -1,0 +1,272 @@
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.list {
+    list-style: none;
+  }
+  .link {
+    text-decoration: none;
+  }
+  .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body{
+    font-family: "DM Sans", sans-serif;
+  }
+  
+  @media screen and (min-width: 375px) {
+    .container {
+      width: 375px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container {
+      width:690px;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    .container {
+      width: 1376px;
+    }
+  }
+
+
+  @media screen and (min-width:320px) {
+    .hero{
+        background-color:  #F6F6F6;
+    }
+    .hero-title{
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #121212;
+        padding-top: 40px;
+        margin-bottom: 24px;
+    }
+    .hero-text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.28;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #121212;
+        margin-top: 51px;
+        width: 338px;
+         
+  }
+    .hero-btn{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.28;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #121212;
+        border: 0.8px solid #121212;
+        border-radius: 32px;
+        background-color: transparent;
+        padding: 8px 18px;
+       
+    }
+    .hero-wrap{
+      display: flex;
+      flex-direction: column; 
+    }
+    .hero-btn-list{
+      display: flex;
+      gap: 10px; 
+      margin-bottom: 40px;
+   }
+   .svg-wrap{
+    display: flex;
+    gap: 60px;   }
+
+    .img-wrap{
+        display: flex;
+    gap: 20px;
+    overflow: hidden;
+    margin-bottom: 35px;
+    }
+
+    .hero-mob-wrap{
+        display: flex;
+        flex-direction: column-reverse;    }
+
+    .photo{
+        width: 250px;
+        height: 429px;
+    }
+    
+   
+   }
+  
+
+
+
+/* --------------------tablet--------------------------- */
+
+@media screen and (min-width: 768px){
+  
+  .hero-title{
+    font-size: 150px;
+    padding-top: 528PX;
+    
+  }
+  .hero-btn{
+    padding: 8px 24px;
+  }
+  .hero-btn-list{
+    gap: 14px;
+    margin-bottom: 86px;
+  }
+  .hero-text-list{
+    flex-direction: row;
+  }
+}
+
+
+
+/* -----------------desctop-------------------- */
+
+@media screen and (min-width:1440px){
+ 
+  .hero-wrap{
+    display: block;
+  }
+  .hero-title{
+    padding-top: 274px;
+    margin-bottom: 196px;
+  }
+  .desc-hero-wrap{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .hero-btn{
+    width: 200px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+  .hero-btn-list{
+    margin-left: 255px;
+    margin-bottom: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  margin: 0;
+  background: #fef8f9;
+}
+
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 20px 5px;
+  color: #3c376f;
+  font-size: 2rem;
+}
+
+button span {
+  position: relative;
+  display: inline-block;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.previous:hover span {
+  transform: translateX(-10px) scale(1.2);
+}
+
+.next:hover span {
+  transform: translateX(10px) scale(1.2);
+}
+
+.slider-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: end;
+}
+
+.slider-nav li {
+  display: flex;
+  flex: 2;
+  /* text-align: center; */
+}
+
+img {
+  max-width: 100%;
+  display: none;
+  box-shadow: 10px 10px 20px 0 rgba(94,47,59,0.2);
+}
+
+img.active {
+  display: block;
+  animation: fadeImg 0.8s;
+}
+
+.slider-nav .arrow {
+  flex: 0 0 15%;
+}
+
+.slider-nav a {
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slider-nav span {
+  display: block;
+  width: 100%;
+}
+
+
+@keyframes fadeImg {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
