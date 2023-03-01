@@ -138,6 +138,11 @@ img {
     border: none;
     cursor: pointer;
   }
+  /* .btn-list-hotel{
+    position: relative;
+    right: -251px;
+    top: 24px; 
+  } */
  
   
  
@@ -188,9 +193,9 @@ img {
         flex-direction: row;
     }
     .hero-text{
-        position: relative;
-        right: 1070px;
-        top: 450px;
+        position: absolute;
+        /* right: 1070px; */
+        top: 576px;
     }
     .desc-wrapper{
         margin-right: 369px;
